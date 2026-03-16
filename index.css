@@ -1,0 +1,37 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --accent: #c8a96e;
+  --accent-dim: #8a7050;
+  --text: #e8e8f0;
+  --text-muted: #888899;
+  --leap: #6ec8a9;
+  --no-leap: #c86e6e;
+  --leap-dim: #2a4a3e;
+  --no-leap-dim: #4a2a2a;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans KR', sans-serif;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
